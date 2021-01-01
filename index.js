@@ -75,4 +75,5 @@ app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 setInterval(() => {
   http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
+  console.log("Pinged for activity");
 }, 280000);
