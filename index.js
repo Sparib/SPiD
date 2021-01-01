@@ -72,3 +72,7 @@ app.use("/", router);
 
 // Start express on defined port
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+setInterval(() => {
+  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
+}, 280000);
